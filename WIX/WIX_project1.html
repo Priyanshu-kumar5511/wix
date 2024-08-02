@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WIX</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            /* overflow-y: hidden;  */
+            overflow-x: hidden;
+
+            
+            
+
+        }
+
+        .box_contaner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            justify-content: space-between;
+            width: 100%;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 2px 4px 0 rgba(173, 161, 161, 0.2), 0 6px 20px 0 rgba(186, 176, 176, 0.19);
+
+         
+
+        }
+
+        .header222 {
+            width: 100%;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 40px;
+            background-color: rgba(255, 255, 255, 0.063);
+        }
+
+        .insidehead {
+            width: 90%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+       
+
+
+
+        .Bigtext {
+            font-weight: 900;
+            padding-top: 20px;
+            font-size: 1.3rem;
+            letter-spacing: 6px;
+
+        }
+
+        .smalltext {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .nav_1 a {
+            /* display: none; */
+            text-decoration: none;
+            margin: 10px;
+            font-size: 15px;
+            color: rgb(103, 98, 98);
+        }
+
+        /* @media screen and (min-width: 1040px) {
+            .nav_1 a  {
+                    display: flex;
+                    
+
+                }
+              } */
+
+        .nav_1 a:hover {
+            color: brown;
+        }
+
+        .login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+            padding-right: 50px;
+            color: rgb(137, 151, 151);
+
+
+        }
+
+        .login:hover {
+            color: rgb(48, 73, 155);
+        }
+
+        .login img {
+            width: 20px;
+            width: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 6px;
+
+
+        }
+
+
+        .main_contener1 {
+            background-image: url(cloud2.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 120vh;
+            padding-top: 70px;
+        }
+
+        .main_text {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        .AMBITION {
+            font-size: .9rem;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: black;
+
+
+        }
+
+        .SUCCESS {
+            font-size: 9rem;
+            font-weight: bold;
+            letter-spacing: 9px;
+            margin-top: -39px;
+            margin-bottom: -36px;
+            color: black;
+
+        }
+
+        .Online {
+            font-size: 1.5rem;
+            color: rgba(33, 32, 32, 0.837);
+
+        }
+
+        .main,button {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+
+        .button {
+            background-color: black;
+            height: 30px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid;
+        }
+
+
+        .card {
+         
+            display: flex;
+            flex-direction: row;
+            height: 30% auto;
+
+          
+        }
+
+        .left_card {
+            width: 50%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+            /* border: 3px solid blue; */
+
+        }
+
+        .card_bold {
+            display: flex;
+            flex-direction: column;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-top: 60px;
+
+        }
+
+        .ABOUT {
+            column-gap: 2.5em;
+            display: flex;
+            margin-bottom: -25px;
+        }
+
+        .card_p {
+            align-items: center;
+            /* border: 0.5px solid; */
+            display: flex;
+            height: 250px;
+            flex-direction: column;
+            padding-top: 50px;
+
+
+        }
+
+        .button_left_card {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            /* border: 2px solid red; */
+            /* margin-left: -125px; */
+            margin-top: 20px;
+
+
+
+        }
+
+        .button_left_card1 {
+            background-color: black;
+            height: 40px;
+            width: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            margin-top: 30px;
+
+        }
+
+        .button_left_card2 {
+            background-color: transparent;
+            height: 40px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-top: 30px;
+            border: 2px solid;
+
+        }
+
+
+        .right_card {
+            width: 50%;
+
+
+
+        }
+
+        .right_card img {
+
+            height: 100%;
+            width: 100%;
+        }
+
+        .bootom_img img {
+            width: 100%;
+
+
+        }
+
+        .main_footer {
+            background-image: url("cloud6.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 140vh;
+            color: white;
+
+            /* border: 5px solid purple; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .bootom_img {
+            margin-left: 15%;
+            margin-right: 15%;
+            height: 100%;
+            /*border: 4px solid red;*/
+            padding-top: 60px;
+
+
+        }
+
+        .bootom_img span {
+
+            column-gap: 2.5em;
+            display: flex;
+            flex-direction: column;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+
+            margin-bottom: -20px;
+
+
+
+        }
+
+        #line {
+            border-top: 2px solid;
+            width: 35px;
+            margin-bottom: 25px;
+        }
+
+        .card_footer {
+
+            height: 50%;
+            width: 100%;
+            margin-top: 60px;
+
+            display: flex;
+            margin-right: 60px;
+           
+            gap: 30px;
+        }
+
+        .card_footer11111 {
+            border: 5px solid black;
+            padding-left: 2%;
+            padding-right: 2%;
+            height: 300px;
+            width: 250px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+        }
+
+        .card_footer11111 p {
+            padding-bottom: -500px;
+            padding-top: -50px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #card_line {
+            border-top: 2px solid;
+            width: 180px;
+            margin-bottom: 25px;
+        }
+
+        #time {
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: -15px;
+
+
+        }
+
+        .card_button {
+            background-color: black;
+            height: 30px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            margin-top: 80px;
+
+
+        }
+
+
+        .card_footer22222 {
+            border: 5px solid black;
+            padding-left: 2%;
+            padding-right: 2%;
+            height: 300px;
+            width: 250px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+
+        }
+
+        .card_footer22222 P {
+            padding-bottom: -500px;
+            padding-top: -50px;
+            text-align: center;
+            font-size: 13px;
+
+        }
+
+        .card_footer33333 {
+            border: 5px solid black;
+            padding-left: 2%;
+            padding-right: 2%;
+            height: 300px;
+            width: 250px;
+            /* margin-left: 25px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .card_footer33333 p {
+            padding-bottom: -500px;
+            padding-top: -50px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .button_main_footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+
+        }
+
+        .card_button_end {
+            background-color: black;
+            height: 30px;
+            width: 100px;
+            text-decoration: none;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer_contener2 {
+            background-color: rgba(47, 175, 198, 0.979);
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+          /* border: 2px solid rgb(22, 203, 82); */
+
+        }
+
+        .inside_footer{
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 130px;
+            display: flex;
+            /* border: 1px solid; */
+            width: 90%;
+            justify-content: space-between;
+            /* border: 2px solid brown; */
+
+            margin-top: 50PX;
+        }
+
+        .left_footer_contener {
+
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            width: 40%;
+            
+        
+            
+        }
+
+        .right_footer_contener
+        {
+
+            /* border: 2px solid; */
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            display: flex;
+            gap: 1;
+
+            
+        }
+
+
+        .right_footer_contener input
+        {
+            color: white;
+            background-color: transparent;
+            border: 1.5px solid black;
+            margin-bottom: 20px;
+            width: 390px;
+            height: 30px;
+        }
+         
+
+        .right_footer_contener textarea
+        {
+            background-color: transparent;
+            border: 1.5px solid black;
+            color: white;
+
+
+        }
+
+
+
+
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            color: rgb(0, 0, 0);
+        }
+
+        .fa-twitter {
+            color: rgb(0, 0, 0);
+        }
+
+        .fa-youtube {
+            color: rgb(0, 0, 0);
+        }
+
+        .fa-instagram {
+            color: rgb(0, 0, 0);
+        }
+
+
+
+
+
+
+
+        .CONTACT{
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: black;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            
+        }
+        #line_footer {
+            border-top: 2px solid;
+            width: 35px;
+            /* margin-top: 20px; */
+            margin-bottom: 10px;
+        }
+
+        .addres p{
+            margin-top: -15px;
+            font-size: 13px;
+
+            /* margin-bottom: 30PX; */
+                   
+
+        }
+
+        .number p
+        {
+           margin-bottom:-5px;
+           /* padding-bottom: -20PX  ; */
+            font-size: 13px;
+        }
+
+        #info
+        {
+            margin-top: 25px;
+        }
+
+        .socile_img
+        {
+            display: flex;
+            flex-direction: row;
+            margin-left: -25px;
+        }
+
+        #last_2035 
+        {
+            font-size: 13px;
+            margin-bottom: 30px;
+
+        }
+        /* .button_footer_last
+        {
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="contaner">
+
+
+        <header>
+            <div class="header222">
+
+                <div class="insidehead">
+                    <div class="texthead222">
+                        <span class="Bigtext">ALLAN JOHNSON </span>
+                        <span class="smalltext">Personal Life Coach</SPan>
+                    </div>
+
+                    <nav class="nav_1">
+                        <a href="#About">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#Plans">Plans</a>
+                        <a href="#Blog">Blogs</a>
+                        <a href="#Guides">Guides</a>
+                        <a href="#Contact">Contact</a>
+                    </nav>
+
+                    <div class="login">
+                        <img src="men.png" alt="">
+                        <span>Log In</span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+        <main>
+            <div class="main_contener1">
+                <div class="main">
+                    <div class="main_text">
+                        <span class="AMBITION">AMBITION IS THE FIRST STEP TOWARDS</span>
+                        <Span class="SUCCESS">SUCCESS</Span>
+                        <span class="Online">Now Available For Online Coaching</span>
+                    </div>
+                    <!-- <button  type="button" class="btn btn-dark  ">Secondary</button> -->
+                    <a href="" class="button">Book Now</a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="left_card">
+                    <div class="card_bold">
+                        <span id="line"></span>
+                        <span class="ABOUT">ABOUT </span>
+                        <span class="ME">ME</span>
+                    </div>
+
+                    <div class="card_p">
+                        <p class="p1"> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just
+                            click “Edit Text” or double click me to add your own content and make changes to the
+                            font. Feel free to drag and drop me anywhere you like on your page. ​</p>
+                        <p class="p2">This is a great space to write long text about your company and your services.
+                            You can use this space to go into a little more detail about your company. Talk about
+                            your team and what services you provide.</p>
+                    </div>
+
+                    <div class="button_left_card">
+                        <a href="" class="button_left_card1">Read More</a>
+                        <a href="" class="button_left_card2">Free Consultation</a>
+                    </div>
+                </div>
+                <div class="right_card">
+                    <img src="men.avif" alt="">
+                </div>
+            </div>
+
+
+            <div class="main_footer">
+                <div class="bootom_img">
+                    <span id="line"></span>
+                    <span>HOW I CAN</span>
+                    <span> HELP YOU </span>
+
+
+                    <div class="card_footer">
+
+                        <div class="card_footer11111">
+                            <h4>FREE</h2>
+                                <h4>CONSULTATION</h2>
+
+                                    <p id="card_p">Use this area to describe one of <br>your services.</p>
+                                    <span id="card_line"></span>
+                                    <span id="time">45 min</span>
+
+                                    <a href="" class="card_button">Book Now</a>
+
+                        </div>
+
+                        <div class="card_footer22222">
+                            <h4>FREE</h2>
+                                <h4>CONSULTATION</h2>
+
+                                    <p id="card_p">Use this area to describe one of <br>your services.</p>
+                                    <span id="card_line"></span>
+                                    <span id="time">45 min</span>
+
+                                    <a href="" class="card_button">Book Now</a>
+                        </div>
+
+
+                        <div class="card_footer33333">
+                            <h4>FREE</h2>
+                                <h4>CONSULTATION</h2>
+
+                                    <p id="card_p">Use this area to describe one of <br>your services.</p>
+                                    <span id="card_line"></span>
+                                    <span id="time">45 min</span>
+
+                                    <a href="" class="card_button">Book Now</a>
+                        </div>
+
+                    </div>
+
+                    <div class="button_main_footer">
+                        <a href="" class="card_button_end">Book Now</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+
+        <footer>
+
+            <div class="footer_contener2">
+
+                <div class="inside_footer">
+                    <div class="left_footer_contener">
+                        <span id="line_footer"></span>
+                        <span class="CONTACT">CONTACT</span>
+
+                        <div class="addres">
+                            <p>500 Terry Francine Street, </p>
+                            <p>San Francisco,CA 94158</p>
+                        </div>
+    
+                       
+    
+                        <div class="number">
+                            <p>Tel:123-456-7890</p>
+                            <p>Fax:123-456-7890</p>
+                        </div>
+    
+    
+                        <p id="info">info@mysite.com</p>
+    
+                        <div class="socile_img">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                        </div>
+    
+                        <p id="last_2035">@ 2035 by Personal Life Coach. <br> Powered and secured by Wix</p>
+    
+                    </div>
+    
+                    <div class="right_footer_contener">
+                        <form>
+                            <label for="fname">Enter Your Name</label><br>
+                            <input type="text" id="fname"><br>
+                            
+                            <label for="lname">Enter Your Email *</label><br>
+                            <input type="text" id="lname" ><br>
+
+                            <label for="fname">Enter Your Subject</label><br>
+                            <input type="text" id="fname" ><br>
+                           
+                            <label for="fname">Message</label><br>
+                            <textarea rows="5" cols="50"> </textarea>
+                          </form>
+                          
+                          <div class="button_footer_last">
+                            <a href="" class="card_button_end">Submit</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+               
+
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
